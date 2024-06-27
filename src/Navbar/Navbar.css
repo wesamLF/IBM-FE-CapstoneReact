@@ -1,0 +1,30 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 80px;
+    font-size: 20px;
+    color: #373A40;
+}
+.nav__logo a{
+    text-decoration: none;
+    font-size: 35px;
+    color: #373A40;
+
+}
+.healthy-y-letter{
+    font-weight: 800;
+    color: #DC5F00;
+}
+.nav__links{
+    list-style-type: none;
+    display: flex;
+    gap:30px;
+    color: #373A40;
+
+}
+.nav__links li a{
+    text-decoration: none;
+    color: #373A40;
+
+}
