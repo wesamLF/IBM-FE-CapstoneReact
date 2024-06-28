@@ -1,0 +1,17 @@
+.dropdown{
+  position: relative;
+  cursor: pointer;
+  
+}
+.dropdown-body{
+  width: 80%;
+  font-size: 15px;
+  padding: 10px;
+  position: absolute;
+  bottom: -100%;
+  left: 0px;
+  box-shadow: 2px 2px 1px  rgba(54, 54, 54, 0.384);
+}
+.dropdown-body p {
+  border-bottom: 1px solid black;
+}

@@ -1,0 +1,14 @@
+.appointment-card{
+    background-color: rgb(12, 126, 12);
+    color: white;
+    padding: 15px;
+    width: 350px;
+    position: absolute;
+    bottom: 20px;
+    right:20px;
+}
+
+.appointment-card__message{
+    display: flex;
+    flex-direction: column;
+}

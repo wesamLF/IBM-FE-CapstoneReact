@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
+import ProfileDropDown from "../ProfileDropDown/ProfileDropDown"
 import "./Navbar.css";
 
 
@@ -46,6 +46,17 @@ const Navbar = () => {
       setUsername(storedemail);
     }
   }, []);
+
+
+
+
+  const options = ['Option 1', 'Option 2', 'Option 3'];
+
+  const handleSelect = (option) => {
+    console.log('Selected Option:', option);
+    // Implement logic to handle selected option
+  };
+
   return (
     <nav>
       <div className="nav__logo">
@@ -61,7 +72,7 @@ const Navbar = () => {
           <Link to="/">Home</Link>
         </li>
         <li className="link">
-          <Link to="/search/doctors">Appointments</Link>
+          <Link to="/find-doctor">Appointments</Link>
         </li>
         <li className="link">
           <Link to="/healthblog">Health Blog</Link>
@@ -69,9 +80,10 @@ const Navbar = () => {
         <li className="link">
           <Link to="/reviews">Reviews</Link>
         </li>
-        {isLoggedIn ? (
+        {true ? (
           <>
-            <li className="link">
+            <li className="link profile_holder">
+              <ProfileDropDown options={options} onSelect={handleSelect} />
               <button className="btn2" onClick={handleLogout}>
                 Logout
               </button>
