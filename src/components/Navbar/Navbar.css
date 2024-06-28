@@ -28,3 +28,8 @@ nav{
     color: #373A40;
 
 }
+
+ul{
+    display: flex;
+    align-items: center;
+}
